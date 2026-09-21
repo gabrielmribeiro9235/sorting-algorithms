@@ -26,7 +26,7 @@ static void merge(int arr[], int left, int right) {
 
     for (i = 0; i < right - left + 1; i++) {
         arr[left + i] = new_array[i];
-    }   
+    }
 }
 
 void merge_sort(int arr[], int left, int right) {
@@ -35,7 +35,7 @@ void merge_sort(int arr[], int left, int right) {
     }
 
     int medium = (left + right) / 2;
-    
+
     merge_sort(arr, left, medium);
     merge_sort(arr, medium + 1, right);
 
